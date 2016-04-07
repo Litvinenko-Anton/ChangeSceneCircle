@@ -4,14 +4,15 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import com.transitionseverywhere.AutoTransition;
-import com.transitionseverywhere.Scene;
-import com.transitionseverywhere.Transition;
-import com.transitionseverywhere.TransitionManager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.RelativeLayout;
+
+import com.transitionseverywhere.AutoTransition;
+import com.transitionseverywhere.Scene;
+import com.transitionseverywhere.Transition;
+import com.transitionseverywhere.TransitionManager;
 
 public class LayoutActivity extends AppCompatActivity {
 
@@ -46,7 +47,7 @@ public class LayoutActivity extends AppCompatActivity {
 
         //Настраиваем переход и его свойства:
         transition = new AutoTransition();
-        //Настраиваем длительность перехода 5 секунд:
+        //Настраиваем длительность перехода 1 секунд:
         transition.setDuration(1000);
         transition.setInterpolator(new AccelerateDecelerateInterpolator());
         //Настраиваем запуск перехода:
