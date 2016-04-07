@@ -5,16 +5,15 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import com.transitionseverywhere.AutoTransition;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.widget.RelativeLayout;
+
 import com.transitionseverywhere.ChangeBounds;
 import com.transitionseverywhere.Scene;
 import com.transitionseverywhere.Transition;
 import com.transitionseverywhere.TransitionManager;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.widget.Button;
-import android.widget.RelativeLayout;
 
 public class LayoutActivity extends AppCompatActivity {
 
@@ -61,7 +60,7 @@ public class LayoutActivity extends AppCompatActivity {
     }
     // Функция нажатие на кнопки
     @TargetApi(Build.VERSION_CODES.KITKAT)
-    public void onClick(View view) {
+    public void changeScene(View view) {
         if (start) {
             TransitionManager.go(scene2, transition);
             start=false;
